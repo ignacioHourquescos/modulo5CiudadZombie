@@ -9,12 +9,13 @@ class Obstaculo {
     this.ancho = ancho;
     this.alto = alto;
     this.potencia = potencia;}
+
+    // Implementar el metodo chocar(jugador) para que al chocar con un obstaculo
+    // el jugador pierda vidas
     chocar() {
       Jugador.perderVidas(this.potencia);
       this.potencia=0;
     };
-    // Implementar el metodo chocar(jugador) para que al chocar con un obstaculo
-    // el jugador pierda vidas
   }
 
 
