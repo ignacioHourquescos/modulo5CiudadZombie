@@ -44,6 +44,6 @@ if ((this.y < this.rangoMov.desdeY) || (this.y > this.rangoMov.hastaY)) {
 }
 
 
-ZombieConductor.prototype.atacar = function(jugador) {
-
-}
+ZombieConductor.prototype.atacar = function() { 
+  Jugador.perderVidas(Jugador.vidas);
+  }
